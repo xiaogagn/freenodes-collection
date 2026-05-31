@@ -54,7 +54,7 @@ def fetch_and_decode(url):
 
 def rename_node(link, index):
     """高级智能节点重命名逻辑"""
-    new_name = f"{CUSTOM_REMARK} {index:03d}"
+    new_name = f"{CUSTOM_REMARK_B64} {index:03d}"
     
     if link.startswith("vmess://"):
         try:
